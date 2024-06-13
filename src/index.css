@@ -1,3 +1,32 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+@layer components {
+    .link {
+    @apply hover:text-black hover:underline;
+    }
+
+    .ques {
+        @apply text-white text-[20px] font-[600] font-[Montserrat] border border-white py-[10px] px-[20px] rounded-xl mb-[50px]
+    }
+
+    .list {
+        @apply text-[18px] text-[#1C1B1F] font-[400] font-[Montserrat]
+    }
+
+    .label {
+        @apply block text-[14px] text-white font-[500] font-[Montserrat] 
+    }
+
+    .input {
+        @apply bg-[#043A3B] text-gray-400 border border-white rounded w-[28rem] py-[10px] pl-[8px] mt-[5px] active:border-white
+    }
+
+    .option {
+        @apply text-white px-[20px]
+    }
+
+}
