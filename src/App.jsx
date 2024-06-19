@@ -4,6 +4,8 @@ import SignIn from './components/signin/SignIn';
 import WelcomePage from './components/pages/welcomepage/WelcomePage';
 import InstructionPage from './components/pages/instructionpage/InstructionPage';
 import ObjPage from './components/pages/objpage/ObjPage';
+import TheoryPage from './components/pages/theorypage/TheoryPage';
+import PracticalPage from './components/pages/practicalpage/PracticalPage';
 
 function App() {
   return (
@@ -18,6 +20,8 @@ function App() {
             <Route path="/welcome" element={<WelcomePage />} />
             <Route path="/instruction" element={<InstructionPage/>} />
             <Route path="/obj" element={<ObjPage/>} />
+            <Route path="/theory" element={<TheoryPage/>} />
+            <Route path="/pract" element={<PracticalPage/>} />
           </Routes>
         </BrowserRouter>
       </div>

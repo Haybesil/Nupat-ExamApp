@@ -29,4 +29,8 @@
         @apply text-white px-[20px]
     }
 
+    .radio {
+        @apply  h-4 w-4
+    }
+
 }

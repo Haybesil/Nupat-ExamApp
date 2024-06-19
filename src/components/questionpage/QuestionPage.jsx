@@ -15,21 +15,21 @@ const ObjectiveQuestions = ({ fetchQuestions }) => {
   const fetchInitialQuestions = async () => {
     setLoading(true);
     try {
-      const questionsData = await fetchQuestions('objective'); // Adjusted to fetch 'objective' questions
+      const questionsData = await fetchQuestions('obj'); // Fetching objective questions
       setQuestions(questionsData.questions);
       setTotalQuestions(questionsData.total);
       setSelectedQuestionIndex(0);
       setLoading(false);
     } catch (error) {
       console.error('Error fetching questions:', error);
-      setError(`Failed to fetch questions: ${error.message}`);
+      setError(`Failed to fetch questions: ${error.message}`); // Provide more specific error message
       setLoading(false);
     }
   };
 
-  const fetchQuestion = async ({code}) => {
+  const fetchQuestion = async (index) => {
     try {
-      const response = await axios.get(`http://davidphenom.pythonanywhere.com/get-objquestion/${code}`);
+      const response = await axios.get(`http://davidphenom.pythonanywhere.com/get-objquestion/${index}`);
       return response.data.question; // Assuming response.data.question is an object with question and options
     } catch (error) {
       console.error('Error fetching question:', error);
