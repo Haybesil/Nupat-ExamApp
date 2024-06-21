@@ -55,7 +55,7 @@ const SignIn = () => {
               Login
             </h1>
           </div>
-          <div className="ml-[20px]">
+          <div className="ml-[5px] lg:ml-[20px]">
             <form onSubmit={handleSubmit} className="flex flex-col gap-[20px]">
               <div>
                 <label htmlFor="username" className="label">
