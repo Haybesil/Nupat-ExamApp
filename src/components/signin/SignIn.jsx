@@ -131,7 +131,7 @@ const SignIn = () => {
           <img
             src={Login}
             alt="Login illustration"
-            className="w-[500px] h-[500px] rounded-tl-xl rounded-bl-xl"
+            className="w-[300px] h-[300px] lg:w-[500px] lg:h-[500px] rounded-tl-xl rounded-bl-xl"
           />
         </div>
       </div>
