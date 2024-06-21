@@ -50,12 +50,12 @@ const SignIn = () => {
     <div className='bg-gray-200 pt-[50px] h-screen'>
       <div className="flex flex-col lg:flex-row justify-center py-[40px]">
         <div className="flex flex-col gap-[40px] pl-[30px] pt-[50px] px-[30px] py-[10px] lg:px-[90px] lg:py-[30px] bg-[#043A3B] rounded">
-          <div className="ml-[20px]">
+          <div className="ml-[3px] lg:ml-[20px]">
             <h1 className="text-[32px] text-white font-[600] font-[Montserrat]">
               Login
             </h1>
           </div>
-          <div className="ml-[5px] lg:ml-[20px]">
+          <div className="ml-[3px] lg:ml-[20px]">
             <form onSubmit={handleSubmit} className="flex flex-col gap-[20px]">
               <div>
                 <label htmlFor="username" className="label">
