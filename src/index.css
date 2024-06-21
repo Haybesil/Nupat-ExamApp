@@ -22,7 +22,7 @@
     }
 
     .input {
-        @apply bg-[#043A3B] text-gray-400 border border-white rounded w-[28rem] py-[10px] pl-[8px] mt-[5px] active:border-white
+        @apply bg-[#043A3B] text-gray-400 border border-white rounded w-[19rem] lg:w-[28rem] py-[10px] pl-[8px] mt-[5px] active:border-white
     }
 
     .option {
